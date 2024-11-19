@@ -1,0 +1,111 @@
+body {
+    color: #f5f5f5;
+    background: #121212; /* Fundo mais agradável para olhos */
+    margin: 0;
+    font-family: "Chakra Petch", sans-serif;
+    margin-bottom: 100px;
+    line-height: 1.6;
+}
+
+header {
+    border-bottom: 2px solid rgb(42, 122, 228);
+    padding: 20px;
+    font-size: 32px;
+    color: rgb(42, 122, 228);
+    text-align: center;
+    background-color: #1a1a1a;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.chamada {
+    background: linear-gradient(135deg, rgb(184, 156, 213), rgb(123, 100, 175));
+    padding: 80px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 2px solid rgb(42, 122, 228);
+}
+
+.chamada-texto {
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #202040;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+iframe {
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.categoria {
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.categoria h2 {
+    color: rgb(42, 122, 228);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+}
+
+.categoria-videos img {
+    opacity: 0.7;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease, border 0.3s ease;
+}
+
+.categoria-videos img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    border: 3px solid green;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Adicionei estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .chamada {
+        flex-direction: column;
+    }
+
+    .chamada-texto {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .categoria-videos img {
+        height: 150px;
+    }
+}
